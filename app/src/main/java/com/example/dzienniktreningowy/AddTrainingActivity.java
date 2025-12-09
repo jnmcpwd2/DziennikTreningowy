@@ -1,3 +1,5 @@
+package com.example.dzienniktreningowy;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
@@ -48,7 +50,7 @@ public class AddTrainingActivity extends AppCompatActivity {
         String repsString = editReps.getText().toString().trim();
         String durationString = editDuration.getText().toString().trim();
         String difficulty = spinnerDifficulty.getSelectedItem().toString();
-        
+
         if (name.isEmpty() || repsString.isEmpty() || durationString.isEmpty()) {
             Toast.makeText(this, "Uzupełnij wszystkie pola", Toast.LENGTH_SHORT).show();
             return;
